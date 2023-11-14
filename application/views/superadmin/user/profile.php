@@ -137,7 +137,7 @@ if($aksi == "lihat"):
             </div>
             <div class="modal-body table-responsive">
                 <table class="table table-bordered table-striped">
-                    <form id="gantipassword" method="post">
+                    <form id="gantipassword" method="post" onsubmit="return validasi();">
                         <input type="hidden" name="id_pengguna" value="<?= $id_pengguna ?>" class="form-control" readonly>
                         <tr>
                             <th>Masukkan Password Baru</th>
@@ -146,6 +146,16 @@ if($aksi == "lihat"):
                             <td>
                                 <input type="password" id="password" name="password" class="form-control"
                                     autocomplete="off" required>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Konfirmasi Password Baru</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="konfirmasi_password" name="konfirmasi_password"
+                                    class="form-control" autocomplete="off" required>
                                 <input type="checkbox" onclick="viewPassword()"> Lihat Password
                             </td>
                         </tr>
@@ -164,19 +174,42 @@ if($aksi == "lihat"):
 </div>
 <!-- End Modal -->
 
-<?php endif; ?>
-
 <script type="text/javascript">
-//view password
-function viewPassword() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
+    //validasi password
+    function validasi() {
+        var password = document.getElementById("password").value;
+        var konfirmasi_password = document.getElementById("konfirmasi_password").value;
+        if (password != konfirmasi_password) {
+            // Display Swal for password mismatch
+            swal({
+                title: "Password Tidak Sama",
+                text: "Silakan pastikan password yang dimasukkan sama dengan password baru anda",
+                type: "error",
+                showConfirmButton: true,
+                confirmButtonText: "OKEE",
+            });
+            return false;
+        }
+        return true;
     }
-}
+
+    //view password
+    function viewPassword() {
+        var password = document.getElementById("password");
+        var konfirmasi_password = document.getElementById("konfirmasi_password");
+        if (password.type === "password") {
+            password.type = "text";
+            konfirmasi_password.type = "text";
+        } else {
+            password.type = "password";
+            konfirmasi_password.type = "password";
+        }
+    }
+
 </script>
+
+
+<?php endif; ?>
 
 <script>
 //edit akun
@@ -220,8 +253,14 @@ $(document).on('submit', '#edit', function(e) {
 });
 
 //edit akun
-$(document).on('submit', '#gantipassword', function(e) {
+$(document).on('submit', '#gantipassword', function (e) {
     e.preventDefault();
+
+    // Call the validation function
+    if (!validasi()) {
+        return; // Do not proceed with the submission if validation fails
+    }
+
     var form_data = new FormData(this);
 
     $.ajax({
@@ -231,8 +270,8 @@ $(document).on('submit', '#gantipassword', function(e) {
         data: form_data,
         processData: false,
         contentType: false,
-        //memanggil swall ketika berhasil
-        success: function(data) {
+        // memanggil swall ketika berhasil
+        success: function (data) {
             $('#gantipassword' + form_data.get('id_pengguna'));
             swal({
                 title: "Berhasil",
@@ -240,24 +279,25 @@ $(document).on('submit', '#gantipassword', function(e) {
                 type: "success",
                 showConfirmButton: true,
                 confirmButtonText: "OKEE",
-            }).then(function() {
+            }).then(function () {
                 location.reload();
             });
         },
-        //memanggil swall ketika gagal
-        error: function(data) {
+        // memanggil swall ketika gagal
+        error: function (data) {
             swal({
                 title: "Gagal",
                 text: "Data Gagal Diubah",
                 type: "error",
                 showConfirmButton: true,
                 confirmButtonText: "OKEE",
-            }).then(function() {
+            }).then(function () {
                 location.reload();
             });
         }
     });
 });
+
 </script>
 
 

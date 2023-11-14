@@ -146,6 +146,15 @@ if($aksi == "lihat"):
                             <td>
                                 <input type="password" id="password" name="password" class="form-control"
                                     autocomplete="off" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Konfirmasi Password Baru</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="konfirmasi_password" name="konfirmasi_password"
+                                    class="form-control" autocomplete="off" required>
                                 <input type="checkbox" onclick="viewPassword()"> Lihat Password
                             </td>
                         </tr>
@@ -163,20 +172,41 @@ if($aksi == "lihat"):
     </div>
 </div>
 <!-- End Modal -->
+<script type="text/javascript">
+    //validasi password
+    function validasi() {
+        var password = document.getElementById("password").value;
+        var konfirmasi_password = document.getElementById("konfirmasi_password").value;
+        if (password != konfirmasi_password) {
+            // Display Swal for password mismatch
+            swal({
+                title: "Password Tidak Sama",
+                text: "Silakan pastikan password yang dimasukkan sama dengan password baru anda",
+                type: "error",
+                showConfirmButton: true,
+                confirmButtonText: "OKEE",
+            });
+            return false;
+        }
+        return true;
+    }
+
+    //view password
+    function viewPassword() {
+        var password = document.getElementById("password");
+        var konfirmasi_password = document.getElementById("konfirmasi_password");
+        if (password.type === "password") {
+            password.type = "text";
+            konfirmasi_password.type = "text";
+        } else {
+            password.type = "password";
+            konfirmasi_password.type = "password";
+        }
+    }
+
+</script>
 
 <?php endif; ?>
-
-<script type="text/javascript">
-//view password
-function viewPassword() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
-</script>
 
 <script>
 //edit akun
@@ -222,6 +252,12 @@ $(document).on('submit', '#edit', function(e) {
 //edit akun
 $(document).on('submit', '#gantipassword', function(e) {
     e.preventDefault();
+
+    // Call the validation function
+    if (!validasi()) {
+        return; // Do not proceed with the submission if validation fails
+    }
+
     var form_data = new FormData(this);
 
     $.ajax({
