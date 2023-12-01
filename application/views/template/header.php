@@ -253,7 +253,7 @@ if($this->session->userdata('level') =="1"){
           </a>
         </li>
         <li class="header">OLAH DATA</li>
-        <li><a href="<?= base_url('admin/cek_plagiasi/input') ?>"><i class="fa fa-check-square-o"></i> <span>Cek Plagiasi Judul</span></a></li>
+        <!-- <li><a href="<?= base_url('admin/cek_plagiasi/input') ?>"><i class="fa fa-check-square-o"></i> <span>Cek Plagiasi Judul</span></a></li> -->
         <li><a href="<?= base_url('admin/judul_skripsi/lihat') ?>" class="active"><i class="fa fa-eye"></i>Lihat Data Judul Skripsi</a></li>                 
       <li><a href="<?= base_url('admin/pengguna/dosen'); ?>"><i class="fa fa-users"></i> <span>Data Dosen</span></a></li>
       <li><a href="<?= base_url('admin/pengguna/admin'); ?>"><i class="fa fa-user"></i> <span>Data Admin</span></a></li>

@@ -44,12 +44,10 @@
 
                 $colorClass = '';
 
-                if ($similarity >= 60) {
+                if ($similarity >= 70) {
                     $colorClass = 'bg-red'; // Merah untuk kemiripan di atas 60% dan 100%
-                } elseif ($similarity >= 45) {
-                    $colorClass = 'bg-yellow'; // Kuning untuk kemiripan di antara 45% dan 59.9%
                 } elseif ($similarity >= 26) {
-                    $colorClass = 'bg-blue'; // Biru untuk kemiripan di antara 26% dan 44.9%
+                    $colorClass = 'bg-orange'; // Oren untuk kemiripan di antara 26% dan 59.9%
                 } elseif ($similarity >= 0) {
                     $colorClass = 'bg-green'; // Hijau untuk kemiripan di antara 0% dan 25.9%
                 }
