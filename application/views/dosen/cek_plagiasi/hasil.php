@@ -4,6 +4,7 @@
         background-color: yellow; /* Ganti warna latar belakang sesuai preferensi Anda */
     }
 </style>
+<p class="lead">Waktu proses pencarian: <?= number_format($executionTime, 4) ?> detik</p>
 <h4>Judul skripsi anda: <strong><?= $userTitle ?></strong></h4>
 <div class="table-responsive">
     <table id="example1" class="table table-bordered table-striped">

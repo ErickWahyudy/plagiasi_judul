@@ -33,6 +33,8 @@ class Cek_plagiasi extends CI_controller
     }
 
     public function calculate_similarity() {
+        $startTime = microtime(true); // Mulai pengukuran waktu
+
         $userTitle = $this->input->post('nama_judul_skripsi');
         
         $titles = $this->M_judul_skripsi->view()->result();
@@ -57,10 +59,14 @@ class Cek_plagiasi extends CI_controller
                 );
             }
         }
+
+        $endTime = microtime(true); // Akhir pengukuran waktu
+        $executionTime = $endTime - $startTime;
     
         $data['matchingData'] = $matchingData; // Menyimpan semua data yang sesuai
         $data['userTitle'] = $userTitle;
         $data['threshold'] = $threshold;
+        $data['executionTime'] = $executionTime; // Menyimpan waktu eksekusi
         $data['judul'] = 'Hasil Cek Plagiasi';
         $this->load->view('dosen/cek_plagiasi/hasil', $data);
     }  
