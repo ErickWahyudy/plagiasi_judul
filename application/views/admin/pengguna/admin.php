@@ -153,15 +153,9 @@ if($aksi == "admin"):
                 <div class="modal-body table-responsive">
                     <table class="table table-bordered table-striped">
                         <form id="edit" method="post">
-                            <tr>
-                                <th>ID pengguna</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text" name="id_pengguna" value="<?= $pengguna['id_pengguna'] ?>"
+                        <input type="hidden" name="id_pengguna" value="<?= $pengguna['id_pengguna'] ?>"
                                         class="form-control" readonly>
-                                </td>
-                            </tr>
+                           
                             <tr>
                                 <th>Nama</th>
                             </tr>
@@ -208,23 +202,7 @@ if($aksi == "admin"):
                                             class="fa fa-key"></i> Ganti Password</a>
                                 </td>
                             </tr>
-                            <tr>
-                                <th>Level</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select name="id_level" class="form-control">
-                                        <option value="">--Pilih Level--</option>
-                                        <?php $no=1; foreach($level as $lev): ?>
-                                        <option value="<?= $lev['id_level'] ?>"
-                                            <?php if($pengguna['id_level']==$lev['id_level']){echo "selected";} ?>>
-                                            <?= $no ?>. <?= $lev['level'] ?>
-                                        </option>
-                                        <?php $no++; endforeach; ?>
-                                    </select>
-                                </td>
-                            </tr>
-
+                            
                             <tr>
                                 <td>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>

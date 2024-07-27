@@ -130,15 +130,9 @@ if($aksi == "lihat"):
                 <div class="modal-body table-responsive">
                     <table class="table table-bordered table-striped">
                         <form id="edit" method="post">
-                            <tr>
-                                <th>ID Judul Skripsi</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text" name="id_judul_skripsi" value="<?= $judul_skripsi['id_judul_skripsi'] ?>"
+                        <input type="hidden" name="id_judul_skripsi" value="<?= $judul_skripsi['id_judul_skripsi'] ?>"
                                         class="form-control" readonly>
-                                </td>
-                            </tr>
+                          
                             <tr>
                                 <th>Nama Mahasiswa</th>
                             </tr>

@@ -12,8 +12,8 @@ CREATE TABLE `tb_judul_skripsi` (
   PRIMARY KEY (`id_judul_skripsi`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J001xnRB0i', 'andi', '187666154', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS ANDROID pada rumah sakit Rs Dr harjono Ponorogo dengan Menggunakan pyton');
-INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0021xpavI', 'Budi', '187766651', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS ANDROID');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J001xnRB0i', 'andi', '187666154', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS ANDROID pada rumah sakit Rs Darmayu Png dengan Menggunakan Framework Codeigniter');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0021xpavI', 'Budi', '18532741', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS ANDROID');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J003bTC0u1', 'Ani', '19533121', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS Web dengan Framework Codeigniter');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0040ZzWjl', 'Wahyu', '18531777', 'IMPLEMENTASI ALGORITMA FIFO (FIRST IN FIRST OUT) PADA SISTEM ANTRIAN PENDAFTARAN PASIEN BERBASIS WEB (Studi Kasus: Klinik Praktik dr. Bambang Sihwiyana, SpOG.)');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J005ZPBXmH', 'Handi', '18765211', 'PERANCANGAN WEBSITE UNTUK MEDIA PROMOSI DAN INFORMASI PRODUK KERAJINAN PATUNG PADA “WARDOYO PATUNG LOROBLONYO ANTIK” WONOGIRI');
@@ -23,6 +23,7 @@ INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `na
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J009cqtfIF', 'Wanvirgia', '19533010', 'SISTEM MONITORING PENDETEKSI SUHU DAN KELEMBAPAN PADA RUMAH JAMUR BERBASIS MIKROKONTROLLER AT-MEGA 328');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0104OMUoe', 'Triono', '19533180', 'SISTEM MONITORING PENGAMAN MOBIL BERBASIS MIKROKONTROLER AT MEGA 16 MELELUI SMS SEBAGAI MEDIA INFORMASI TAHUN 2013/2014. SKRIPSI PROGRAM STUDI TEKNIK ELEKTRO,FAKULTAS TEKNIK, UNIVERSITAS MUHAMMADIYAH PONOROGO');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J011CTVp8B', 'Qorib', '19533801', 'PENERAPAN E-COMMERCE SEBAGAI MEDIA PROMOSI DAN PEMASARAN DECOUPAGE PADA ADHYS COLLECTION & CRAFT MALANG TAHUN 2018');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0129SSEmx', 'Yudi', '19533100', 'PERANCANGAN WEBSITE BADAN PENDAPATAN PENGELOLAAN KEUANGAN DAN ASET DAERAH (BPPKAD) DENGAN MENGGUNAKAN PHP7 DAN MYSQL');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J013zIKmYx', 'Hani', '19533111', 'SISTEM MONITORING WEBSITE OPD PADA DINAS KOMUNIKASI INFORMATIKA DAN STATISTIK KABUPATEN PONOROGO BERBASIS WEB');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0148BrGVY', 'Nina', '19533050', ' PERANCANGAN APLIKASI GAME QUIS UMPO BERBASIS ANDROID SEBAGAI MEDIA PEMBELAJARAN MAHASISWA TEKNIK INFORMATIKA UNIVERSITAS MUHAMMADIYAH PONOROGO');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J015yiQKNl', 'Gigi', '19533211', 'IMPLEMENTASI ALGORITMA DECISION TREE PADA INTERNET OF THINGS INKUBATOR TEMPE KEDELAI');
@@ -35,6 +36,18 @@ INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `na
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J022Ni41SB', 'Risma', '18111321', 'IMPLEMENTASI ALGORITMA K-MEANS CLUSTERING PADA SISTEM INFORMASI PERSEBARAN PENYAKIT DEMAM BERDARAH BERBASIS WEBGIS');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J023TF8apK', 'Elisa', '18561456', 'MPLEMENTASI ALGORITMA WEIGHTED PRODUCT (WP) DALAM PENENTUAN TENAGA KESEHATAN TELADAN BERBASIS WEB');
 INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0247vJLRz', 'Rani Dwi Kartikasari', '19533169', 'IMPLEMENTASI ALGORITMA CONVOLUTIONAL NEURAL NETWORK (CNN) UNTUK IDENTIFIKASI JENIS TANAMAN RIMPANG (ZINGIBERACEAE)');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0252uJBfS', 'Fuad', '19533333', 'Penerapan algoritma horspool sebagai pendeteksi kemiripan judul skripsi');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J026zZSVdh', 'Arhan', '19536699', 'Implementasi algoritma naive bayes untuk identifikasi penyakit pada burung perkutut berbasis web');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J027DjWYRK', 'Dewangga', '19532121', 'Implementasi metode naive bayes untuk mengidentifikasi penyakit burung kenari berbasis web');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J028aUH6lf', 'Ernando', '19532020', 'Penerapan metode ahp untuk mencari pemain voli terbaik');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J029hLJMCx', 'Abdul', '19533300', 'Rancang bangun aplikasi pemesanan design dan percetakan banner pada toko onedi gontor');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J030O12t5r', 'Ahmaf', '19536644', 'Sistem pendukung keputusan pemilihan jurusan kuliah menggunakan algoritma AHP');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J031FstM7y', 'Susan', '19664455', 'Implementasi metode naive bayes untuk diagnosa penyakit burung lovebird berbasis web');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J032jxs5ob', 'Beni', '19554411', 'Sistem pendukung keputusan rekomendasi kos menggunakan metode smart');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J033l0Khit', 'Dandi', '19663377', 'Implementasi algoritma naive bayes untuk diagnosa penyakit tanaman mentimun berbasis web');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0340yLAnJ', 'Udin', '19663300', 'Algoritma decision tree pada iot untuk perangkap hama ngengat tanaman bawang');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J0355BKrkH', 'Robot', '19663374', 'Algoritma decision tree pada iot untuk pengelolaan suhu kandang ayam petelur');
+INSERT INTO `tb_judul_skripsi` (`id_judul_skripsi`, `nama_mahasiswa`, `nim`, `nama_judul_skripsi`) VALUES ('J036FXecZ0', 'Pia', '19664411', 'Sistem pendukung keputusan pemilihan pemain inti bola voli ukm bvad menggunakan metode ahp');
 
 
 #
@@ -69,7 +82,7 @@ CREATE TABLE `tb_pengaturan` (
   PRIMARY KEY (`id_pengaturan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `tb_pengaturan` (`id_pengaturan`, `nama_judul`, `meta_keywords`, `meta_description`, `background`) VALUES ('P1xhDwL', 'Plagiasi Judul Skripsi', 'Kassandra Production, Plagiasi, Turnitin', 'Web Plagiasi Judul Skripsi merupakan web aplikasi untuk mengetahui persentase kemiripan judul naskah anda dengan yang terdahulu', 'header_65032c44088d2.jpg');
+INSERT INTO `tb_pengaturan` (`id_pengaturan`, `nama_judul`, `meta_keywords`, `meta_description`, `background`) VALUES ('P1xhDwL', 'Plagiasi Judul Skripsi', 'Plagiasi, Turnitin, Perpus Unmuh Ponorogo', 'Web Plagiasi Judul Skripsi merupakan web aplikasi untuk mengetahui persentase kemiripan judul naskah anda dengan yang terdahulu', 'header_65033bfe684f7.jpg');
 
 
 #
@@ -91,10 +104,11 @@ CREATE TABLE `tb_pengguna` (
   CONSTRAINT `tb_pengguna_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `tb_level` (`id_level`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A001bnHDs', 'Erik Wahyudi', '19533173', 'Admin Utama', 'erik@gmail.com', '202cb962ac59075b964b07152d234b70', '1');
+INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A001bnHDs', 'Erik W', '19533173', 'Admin Utama', 'erik@gmail.com', '202cb962ac59075b964b07152d234b70', '1');
 INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A002WaiTlE', 'Budi', '19533111', 'Dosen1', 'budi@gmail.com', '202cb962ac59075b964b07152d234b70', '3');
-INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A003uUfaw8', 'Fuad Ainur', '19533174', 'Dosen Kalkulus', 'fuad@gmail.com', '202cb962ac59075b964b07152d234b70', '2');
+INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A003uUfaw8', 'Fuad Ainur', '19533156', 'Dosen Kalkulus', 'fuad@gmail.com', '202cb962ac59075b964b07152d234b70', '2');
 INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A0056CY3IE', 'Rika An Rokhim', '19533169', 'Dosen AI', 'rika@gmail.com', '202cb962ac59075b964b07152d234b70', '3');
 INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A006zOYz1s', 'Rani Dwi Kartikasari', '19533171', 'Dosen Network Advance', 'rani@gmail.com', '202cb962ac59075b964b07152d234b70', '3');
+INSERT INTO `tb_pengguna` (`id_pengguna`, `nama`, `nidn`, `keterangan`, `email`, `password`, `id_level`) VALUES ('A00747857s', 'Fuad', '19531122', 'Dosen', 'fuadainur@gmail.com', '202cb962ac59075b964b07152d234b70', '3');
 
 

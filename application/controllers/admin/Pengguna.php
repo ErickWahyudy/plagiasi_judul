@@ -203,8 +203,7 @@ class Pengguna extends CI_controller
             'nama'            => $this->input->post('nama'),
             'nidn'            => $this->input->post('nidn'),
             'keterangan'      => $this->input->post('keterangan'),
-            'email'           => $this->input->post('email'),
-            'id_level'        => $this->input->post('id_level')
+            'email'           => $this->input->post('email')
           ];
           if ($this->m_pengguna->update($id, $SQLupdate)) {
             $response = [
